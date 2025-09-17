@@ -1,0 +1,76 @@
+/* General Styling */
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile{
+    height: 200px;
+    width: 200px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on sections */
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Heading Styling */
+h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+/* Links Styling */
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+}

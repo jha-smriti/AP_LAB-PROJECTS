@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+header a {
+  color: #0073b1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.job, .project {
+  margin-bottom: 15px;
+}
+
+.project a {
+  color: #0073b1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.6;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+      width: 90%;
+      padding: 15px;
+  }
+  
+  h1 {
+      font-size: 24px;
+  }
+
+  p, li {
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 22px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  p, li {
+      font-size: 13px;
+  }
+}

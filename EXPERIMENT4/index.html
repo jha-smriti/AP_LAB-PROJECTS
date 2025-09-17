@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📈 Stock Price Predictor</h1>
+        <input type="number" id="daysInput" placeholder="Enter days to predict" />
+        <button onclick="getPrediction()">Predict</button>
+
+        <div class="result">
+            <h2>Predictions</h2>
+            <p><strong>Linear Regression:</strong> <span id="lrPrediction">--</span></p>
+            <p><strong>LSTM Model:</strong> <span id="lstmPrediction">--</span></p>
+        </div>
+
+        <canvas id="predictionChart"></canvas>
+    </div>
+</body>
+</html>
